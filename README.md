@@ -11,22 +11,15 @@ Assemble Navs requires [Assemble Base].
 npm install assemble-navs --save-dev
 
 ## Usage
-### Gulp
-```js
-var gulp = require('gulp');
-var postcss = require('gulp-postcss');
-var assembleBase = require('assemble-base');
-var assembleNavs = require('assemble-navs');
+Import the _assemble-lists.css file from your css file.
+```css
+@import '../node_modules/assemble-base/base';
 
-gulp.task('css', function () {
-    var processors = [
-        assembleBase,
-        assembleNavs
-    ];
-    return gulp.src('./src/*.css')
-        .pipe(postcss(processors))
-        .pipe(gulp.dest('./dest'));
-});
+/*
+Override variables here before the Assemble Components are loaded.
+*/
+
+@import '../node_modules/assemble-lists/assemble-lists';
 ```
 
 ### HTML
