@@ -19,7 +19,7 @@ Import the _assemble-lists.css file from your css file.
 Override variables here before the Assemble Components are loaded.
 */
 
-@import '../node_modules/assemble-lists/assemble-lists';
+@import '../node_modules/assemble-navs/assemble-navs';
 ```
 
 ### HTML
