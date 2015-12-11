@@ -1,11 +1,11 @@
 [Assemble]:                http://assemblecss.com
-[Assemble Core]:           https://github.com/lukelarsen/assemble-core
+[Assemble Base]:           https://github.com/lukelarsen/assemble-base
 
 # Assemble Navs
 Assemble Navs is a component of the [Assemble] CSS Framework. It will give you a solid base for using media players in your project. It has some default styles that can easily be overridden so you can add your own look.
 
 ## Requirements
-Assemble Navs requires [Assemble Core].
+Assemble Navs requires [Assemble Base].
 
 ## Installation
 npm install assemble-navs --save-dev
@@ -29,8 +29,18 @@ gulp.task('css', function () {
 });
 ```
 
+### HTML
+```html
+<ul class="nav">
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact</a></li>
+    <li><a href="#">Portfolio</a></li>
+    <li><a href="#">Search</a></li>
+</ul>
+```
+
 ## Options
-Options are set with variables. These variables are already set with their default values so they will just work out of the box. If you wish to change them just define the variable you want to change before you load the _assemble-navs.css file. You may wish you see [Assemble Core] for more examples and directions for setting up a Assemble project.
+Options are set with variables. These variables are already set with their default values so they will just work out of the box. If you wish to change them just define the variable you want to change before you load the _assemble-navs.css file. You may wish you see [Assemble Base] for more examples and directions for setting up a Assemble project.
 
 ### Design Variables
 
@@ -76,6 +86,15 @@ $breadcrumb-a-left: 5px;
 ```css
 $nav--fit: true;
 ```
+Usage
+```html
+<ul class="nav  nav--fit">
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact</a></li>
+    <li><a href="#">Portfolio</a></li>
+    <li><a href="#">Search</a></li>
+</ul>
+```
 
 ##### $nav--stacked
 - Turn on/off stacked navigations in your application. If set to true you can use the class .nav--stacked. It requires .nav.
@@ -83,6 +102,15 @@ $nav--fit: true;
 - Type: Boolean
 ```css
 $nav--stacked: true;
+```
+Usage
+```html
+<ul class="nav  nav--stacked">
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact</a></li>
+    <li><a href="#">Portfolio</a></li>
+    <li><a href="#">Search</a></li>
+</ul>
 ```
 
 ##### $nav--center
@@ -92,6 +120,15 @@ $nav--stacked: true;
 ```css
 $nav--center: true;
 ```
+Usage
+```html
+<ul class="nav  nav--center">
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact</a></li>
+    <li><a href="#">Portfolio</a></li>
+    <li><a href="#">Search</a></li>
+</ul>
+```
 
 ##### $nav--right
 - Turn on/off right navigations in your application. If set to true you can use the class .nav--right. It requires .nav.
@@ -99,6 +136,15 @@ $nav--center: true;
 - Type: Boolean
 ```css
 $nav--right: true;
+```
+Usage
+```html
+<ul class="nav  nav--right">
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact</a></li>
+    <li><a href="#">Portfolio</a></li>
+    <li><a href="#">Search</a></li>
+</ul>
 ```
 
 ##### $nav--left
@@ -108,6 +154,15 @@ $nav--right: true;
 ```css
 $nav--left: true;
 ```
+Usage
+```html
+<ul class="nav  nav--left">
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact</a></li>
+    <li><a href="#">Portfolio</a></li>
+    <li><a href="#">Search</a></li>
+</ul>
+```
 
 ##### $nav--space-between
 - Turn on/off space between navigations in your application. If set to true you can use the class .nav--space-between. It requires .nav.
@@ -115,6 +170,15 @@ $nav--left: true;
 - Type: Boolean
 ```css
 $nav--space-between: true;
+```
+Usage
+```html
+<ul class="nav  nav--space-between">
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact</a></li>
+    <li><a href="#">Portfolio</a></li>
+    <li><a href="#">Search</a></li>
+</ul>
 ```
 
 ##### $nav--space-around
@@ -124,6 +188,15 @@ $nav--space-between: true;
 ```css
 $nav--space-around: true;
 ```
+Usage
+```html
+<ul class="nav  nav--space-around">
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact</a></li>
+    <li><a href="#">Portfolio</a></li>
+    <li><a href="#">Search</a></li>
+</ul>
+```
 
 ##### $nav--keywords
 - Turn on/off keyword navigations in your application. If set to true you can use the class .nav--keywords. It requires .nav.
@@ -131,6 +204,15 @@ $nav--space-around: true;
 - Type: Boolean
 ```css
 $nav--keywords: true;
+```
+Usage
+```html
+<ul class="nav  nav--keywords">
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact</a></li>
+    <li><a href="#">Portfolio</a></li>
+    <li><a href="#">Search</a></li>
+</ul>
 ```
 
 ##### $nav--pagination
@@ -140,6 +222,17 @@ $nav--keywords: true;
 ```css
 $nav--pagination: true;
 ```
+Usage
+```html
+<ul class="nav  nav--pagination">
+    <li class="nav--pagination__first"><a href="#">Prev</a></li>
+    <li><a href="#">7</a></li>
+    <li><a href="#">8</a></li>
+    <li><a href="#">9</a></li>
+    <li><a href="#">10</a></li>
+    <li class="nav--pagination__last"><a href="#">Next</a></li>
+</ul>
+```
 
 ##### $nav--breadcrumb
 - Turn on/off breadcrumb navigations in your application. If set to true you can use the class .nav--breadcrumb. It requires .nav.
@@ -147,6 +240,14 @@ $nav--pagination: true;
 - Type: Boolean
 ```css
 $nav--breadcrumb: true;
+```
+Usage
+```html
+<ul class="nav  nav--breadcrumb">
+    <li><a href="#">Prodcut Page</a></li>
+    <li><a href="#">Prodcut Sub Page</a></li>
+    <li><a href="#">Checkout Page</a></li>
+</ul>
 ```
 
 ##### $nav--breadcrumb--path
@@ -156,6 +257,14 @@ $nav--breadcrumb: true;
 ```css
 $nav--breadcrumb--path: true;
 ```
+Usage
+```html
+<ul class="nav  nav--breadcrumb  nav--breadcrumb--path">
+    <li><a href="#">Prodcut Page</a></li>
+    <li><a href="#">Prodcut Sub Page</a></li>
+    <li><a href="#">Checkout Page</a></li>
+</ul>
+```
 
 ##### $nav--breadcrumb--custom
 - Turn on/off custom breadcrumb navigations in your application. If set to true you can use the class .nav--breadcrumb--custom. It requires .nav & .nav--breadcrumb.
@@ -163,4 +272,12 @@ $nav--breadcrumb--path: true;
 - Type: Boolean
 ```css
 $nav--breadcrumb--custom: true;
+```
+Usage
+```html
+<ul class="nav  nav--breadcrumb  nav--breadcrumb--custom">
+    <li><a href="#">Prodcut Page</a></li>
+    <li data-breadcrumb="_"><a href="#">Prodcut Sub Page</a></li>
+    <li data-breadcrumb="--"><a href="#">Checkout Page</a></li>
+</ul>
 ```
