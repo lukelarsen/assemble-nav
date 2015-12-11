@@ -15,12 +15,12 @@ npm install assemble-navs --save-dev
 ```js
 var gulp = require('gulp');
 var postcss = require('gulp-postcss');
-var assembleCore = require('assemble-core');
+var assembleBase = require('assemble-base');
 var assembleNavs = require('assemble-navs');
 
 gulp.task('css', function () {
     var processors = [
-        assembleCore,
+        assembleBase,
         assembleNavs
     ];
     return gulp.src('./src/*.css')
