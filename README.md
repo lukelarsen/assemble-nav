@@ -11,7 +11,7 @@ Assemble Navs requires [Assemble Base].
 npm install assemble-navs --save-dev
 
 ## Usage
-Import the _assemble-lists.css file from your css file.
+Import the _assemble-navs.css file from your css file.
 ```css
 @import '../node_modules/assemble-base/base';
 
