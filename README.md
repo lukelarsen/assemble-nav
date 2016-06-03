@@ -218,12 +218,12 @@ $nav--pagination: true;
 Usage
 ```html
 <ul class="nav  nav--pagination">
-    <li class="nav--pagination__first"><a href="#">Prev</a></li>
+    <li><a href="#">Prev</a></li>
     <li><a href="#">7</a></li>
     <li><a href="#">8</a></li>
     <li><a href="#">9</a></li>
     <li><a href="#">10</a></li>
-    <li class="nav--pagination__last"><a href="#">Next</a></li>
+    <li><a href="#">Next</a></li>
 </ul>
 ```
 

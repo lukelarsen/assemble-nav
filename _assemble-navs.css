@@ -177,11 +177,11 @@
         padding: $pagination-a-spacing;
     }
 
-    .nav--pagination .nav--pagination__first a:before{
+    .nav--pagination li:first-child a:before{
         content: '« ';
     }
 
-    .nav--pagination .nav--pagination__last a:after{
+    .nav--pagination li:last-child a:after{
         content: ' »';
     }
 }
